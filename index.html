@@ -8,13 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Form Validation</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 mx-auto">
-                <h1>user Form</h1>
+            <div class="col-md-6 mx-auto mt-5">
+                <h1>User Form</h1>
                 <form>
                     <div class="form-group">
                         <label>Name</label>
@@ -23,6 +23,28 @@
                             Name must be between 2 and 10 characters
                         </div>
                     </div>
+                    <div class="form-group">
+                      <label>Zipcode</label>
+                      <input type="text" class="form-control" id="zip" placeholder="Zipcode">
+                      <div class="invalid-feedback">
+                          Enter a valid Zipcode
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" id="mail" placeholder="email">
+                    <div class="invalid-feedback">
+                        Enter a valid email
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                  <div class="invalid-feedback">
+                      Enter a valid phone number
+                  </div>
+              </div>
+              <input type="submit" value="submit" class="btn btn-primary btn-block">
                 </form>
             </div>
         </div>
